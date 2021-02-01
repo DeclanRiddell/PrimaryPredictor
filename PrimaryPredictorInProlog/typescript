@@ -1,0 +1,41 @@
+Script started on 2020-05-03 23:44:03-04:00 [TERM="xterm-256color" TTY="/dev/pts/18" COLUMNS="97" LINES="19"]
+]0;riddel37@elvix2:~/PrologHW[1melvix2:~/PrologHW 696>[0m swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.0.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- ?- ?- ?- [li[6G[K?- [[Kprologhw[13G][4G[14G.
+[1mtrue.[0m
+
+?- predict(nh, [
+|                    [dt, ny, 78, 21, 1[40G][22G[41G,
+|                    [jw, il, 30, 10, 0[40G][22G[41G,
+|                    [bw, ma, 93, 15, 0[40G][22G[41G [42G], Prediction[55G).
+Prediction = [[dt, 33], [jw, 13], [bw, 24]] [1m.[0m
+
+?- predict(hi, [
+|                    [jb, de, 63, 1, 7[39G][22G[40G,
+|                    [mb, ny, 95, 0, 0[39G][22G[40G,
+|                    [pb, in, 21, 2, 3[39G][22G[40G,
+|                    [jd, md, 10, 1, 0[39G][22G[40G,
+|                    [tg, hi, 22, 5, 0[39G][22G[40G,
+|                    [ak, mn, 25, 2, 1[39G][22G[40G,
+|                    [dp, ma, 12, 1, 0[39G][22G[40G,
+|                    [bs, vt, 55, 2, 7[39G][22G[40G,
+|                    [ts, ca, 13, 1, 0[39G][22G[40G,
+|                    [ew, ma, 68, 2, 7[39G][22G[40G,
+|                    [ay, ny, 29, 0, 0[39G][22G[40G [41G], Prediction[54G).
+Prediction = [[jb, 42], [mb, 9], [pb, 19], [jd, 2], [tg, 57], [ak, 9], [dp, 2], [bs, 42], [ts, 2], [ew, 43], [ay, 2]] [write]
+Prediction = [[jb, 42], [mb, 9], [pb, 19], [jd, 2], [tg, 57], [ak, 9], [dp, 2], [bs, 42], [ts, 2], [ew, 43], [ay, 2]] [1m.[0m
+
+?- ^D
+[32m% halt
+[0m]0;riddel37@elvix2:~/PrologHW[1melvix2:~/PrologHW 697>[0m end
+bash: end: command not found
+]0;riddel37@elvix2:~/PrologHW[1melvix2:~/PrologHW 698>[0m exit
+exit
+
+Script done on 2020-05-03 23:45:19-04:00 [COMMAND_EXIT_CODE="127"]

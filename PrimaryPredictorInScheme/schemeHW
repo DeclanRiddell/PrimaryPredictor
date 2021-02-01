@@ -1,0 +1,51 @@
+; Declan Riddell
+; Primary Predictor
+; 1.0
+
+; Originally had caar (cddar L) for commercials
+
+(define (predict State L)
+        ; Call all of your functions on your input
+        ; Check to see that the list is not null, and if there are still candidates, then keep going. 
+        (cond   ((null? L)                                              '(  ) )
+                (else                                                 (cons (list (caar L) (+ (+ (+ (+ (compstate State L) (compregion State L)) (commercials (car(cddar L)))) (days (caddr (cddar L) ))) (primary (car (cddr (cddar L)))))) (predict State (cdr L))))))
+
+(define (region S)
+        ; Return a number for the Region of the entered State
+        ; Use this and compare with the STATE from the given Primary
+        ; If the numbers match -- give 20 points
+        (cond   ((member 'S '(ME NH VT MA CT RI))                       1)
+                ((member 'S '(NY PA NJ DE MD))                          2)
+                ((member 'S '(VA NC SC GA FL AL MS TN KY WV AR LA))     3)
+                ((member 'S '(OH MY IN IL WI MN))                       4)
+                ((member 'S '(IA MO ND SD NE KS OK TX))                 5)
+                ((member 'S '(MT WY CO NM AZ UT ID NV))                 6)
+                ((member 'S '(WA OR CA AK HI))                          7) ) )
+
+(define (commercials C)
+        ; Takes the amount of commercials and computes the amount of points the candidate should be given
+        (cond   ((> C 0)                                                (quotient C 10))
+                (else                                                   0)) )
+
+(define (days D)
+        ; Uses the amount of DAYS a given candidate has spent in the state and gives them points based on that.
+        ; Might actually not need this function tbh
+        (cond   ((> D 0)                                                D)
+                (else                                                  0)) )
+
+(define (primary P)
+        ; Takes the amount of previous caucasses won by a candidate and performs the give calculation to find the 
+        ; points they should be given
+        (cond   ((> P 0)                                                  (* P 5))
+                (else                                                    0)) )
+
+(define (compstate S L)
+        ; Compares the input state with the second element of the first List in the input
+        ; IOW compares the State with the homestate of the candidate
+        (cond   ((equal? S (cadar L))                                        50)
+                (else                                                        0)))
+
+(define (compregion S L)
+        ; Calls region to find which region the State belongs to, and then compares to the region of the candidate
+        (cond   ((eq? (region S) (region (cadar L)))                               20)
+                (else                                                           0)))

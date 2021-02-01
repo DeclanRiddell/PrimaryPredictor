@@ -1,0 +1,31 @@
+Script started on 2020-02-19 23:15:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/64" COLUMNS="341" LINES="22"]
+]0;riddel37@elvix2:~/SchemeHW[1melvix2:~/SchemeHW 1001>[0m scheme48
+Welcome to Scheme 48 1.9.2 (made by root on 2016-08-30)
+See http://s48.org/ for more information.
+Please report bugs to scheme-48-bugs@s48.org.
+Get more information at http://www.s48.org/.
+Type ,? (comma question-mark) for help.
+> ,load schemeHW
+> (predict 'NH
+	'( (DT NY 78 21 1)
+	   (JW IL 30 10 0)
+	   (BW MA 93 15 0) ))
+((dt 33) (jw 23) (bw 29))
+> (predict 'HI
+	'( (JB DE 63 1 7)
+	   (MB NY 95 0 0)
+	   (PB IN 21 2 3)
+	   (JD MD 10 1 0)
+	   (TG HI 22 5 0)
+	   (AK MN 25 2 1)
+	   (DP MA 12 1 0)
+	   (BS VT 55 2 7)
+	   (TS CA 13 1 0) 
+	   (EW MA 68 2 7)
+	   (AY NY 29 0 0) ))
+((jb 68) (mb 29) (pb 40) (jd 21) (tg 72) (ak 28) (dp 21) (bs 67) (ts 21) (ew 68) (ay 22))
+> 
+Exit Scheme 48 (y/n)? y
+]0;riddel37@elvix2:~/SchemeHW[1melvix2:~/SchemeHW 1002>[0m exit
+
+Script done on 2020-02-19 23:16:35-05:00 [COMMAND_EXIT_CODE="1"]

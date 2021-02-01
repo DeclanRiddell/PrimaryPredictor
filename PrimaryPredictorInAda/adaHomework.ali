@@ -1,0 +1,85 @@
+V "GNAT Lib v9"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV SPARK_05
+
+U adahomework%b		adaHomework.adb		b30bbcd1 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20190109115759 76789da1 ada%s
+D a-except.ads		20190109115759 291912d5 ada.exceptions%s
+D a-inteio.ads		20190109115800 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190109115800 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20190109115800 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20190109115800 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20190109115800 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20190109115759 119b8fb3 ada.streams%s
+D a-tags.ads		20190109115800 491b781d ada.tags%s
+D a-textio.ads		20190109115800 881db35a ada.text_io%s
+D a-tiinio.ads		20190109115800 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20190109115800 0e9b276f ada.unchecked_conversion%s
+D adaHomework.adb	20200403011223 ceb5bb33 adahomework%b
+D interfac.ads		20190109115800 5ab55268 interfaces%s
+D i-cstrea.ads		20190109115800 e53d8b8e interfaces.c_streams%s
+D system.ads		20190109115800 4635ec04 system%s
+D s-crtl.ads		20190109115800 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190109115800 54135002 system.exception_table%s
+D s-ficobl.ads		20190109115800 078245e4 system.file_control_block%s
+D s-parame.ads		20190109115800 48ec542b system.parameters%s
+D s-secsta.ads		20190109115759 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190109115759 a7318a92 system.soft_links%s
+D s-stache.ads		20190109115800 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190109115800 09bd3940 system.standard_library%s
+D s-stoele.ads		20190109115800 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190109115759 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190109115759 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190109115800 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 13|3r6 3r19 3r40 4r5 4r18 4r39
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 13|3w23 4r22
+X 5 a-numeri.ads
+16K13*Numerics 32e17 13|3r44 4r43
+X 6 a-nuelfu.ads
+18K22*Elementary_Functions[7|39] 13|3w53 4r52
+X 10 a-textio.ads
+49K13*Text_IO 471e16 13|3w10 4r9
+166U14*New_Line 13|83s17
+169U14*Skip_Line 13|62s17
+206U14*Get 13|57s17
+240U14*Get 13|51s9 56s17 58s17
+242U14*Put 13|81s17
+X 11 a-tiinio.ads
+56U14*Get 13|52s9[3|18] 59s17[3|18] 60s17[3|18] 61s17[3|18]
+66U14*Put 13|82s17[3|18]
+X 13 adaHomework.adb
+7U11*adaHomework 7b11 87l5 87t16
+13A13 State_Abbr{string}<integer> 16r24 18r21 28r37
+14A13 Initials{string}<integer> 17r20
+16a9 Current_State{13A13} 51m13 63r33 66r32
+17a9 Cand_Name{14A13} 56m21 81r21
+18a9 Home_State{13A13} 58m21 63r20 66r61
+19i9 Commercials{natural} 59m21 69r20 70m25 70r41 71r42
+20i9 Days{natural} 60m21 73r20 74r42
+21i9 Wins{natural} 61m21 76r20 77m25 77r34 78r42
+22i9 Number_of_Cands{natural} 52m13 53r21
+23e9 Space{character} 57m21
+24i9 Score{integer} 54m17 64m25 67m25 67r34 71m25 71r34 74m25 74r34 78m25
+. 78r34 82r21 84r31
+25i9 Prev_Score{integer} 55m17 82r29 84m17
+28V18 checkRegion{integer} 28b18 28>30 47l13 47t24 66s20 66s49
+28a30 State{13A13} 30r20 30r36 30r52 30r68 30r84 30r100 32r23 32r39 32r55
+. 32r71 32r87 34r23 34r39 34r55 34r71 34r87 34r103 34r119 34r135 34r151 34r167
+. 34r183 34r199 36r23 36r39 36r55 36r71 36r87 36r103 38r23 38r39 38r55 38r71
+. 38r87 38r103 38r119 38r135 40r23 40r39 40r55 40r71 40r87 40r103 40r119
+. 40r135 42r23 42r39 42r55 42r71 42r87
+53i13 I{integer}
+

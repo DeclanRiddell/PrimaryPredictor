@@ -1,0 +1,29 @@
+?- set_prolog_flag(answer_write_options, [quoted(true),portray(true), spacing(next_argument)]).
+
+% Declan Riddell
+% Prolog Primary Predictor
+
+predict(State, [[C, S, M, D, W] | T], [[C, Prediction] | NewPrediction]) :- matchstate(State, S, StateScore), commercials(M, CommScore), days(D), wins(W, WinsScore), compute(StateScore, CommScore, D, WinsScore, Prediction), predict(State, T, NewPrediction).
+predict(_, [], []).
+
+% State Matching to give either 50 or 0 points 
+matchstate(State, S, 50) :- State == S.
+matchstate(State, S, 0) :- State \== S.
+
+%This is to assign a region number to each state, so that it can be later checked for points
+region_num(State, 1) :- member(State, [me, nh, vt, ma, ct, ri]).
+region_num(State, 2) :- member(State, [ny, pa, nj, de, md]).
+region_num(State, 3) :- member(State, [va, nc, sc, ga, fl, al, ms, tn, ky, wv, ar, la]).
+region_num(State, 4) :- member(State, [oh, mi, in, il, wi, mn]).
+region_num(State, 5) :- member(State, [ia, mo, nd, sd, ne, ks, ok, tx]).
+region_num(State, 6) :- member(State, [mt, wy, co, nm, az, ut, id, nv]).
+region_num(State, 7) :- member(State, [wa, or, ca, ak, hi]).
+
+matchregion(CurrentState, HomeState, 20) :- region_num(CurrentState, _) == region_num(HomeState, _).
+matchregion(CurrentState, HomeState, 0) :- region_num(CurrentState, _) \== region_num(HomeState, _).
+
+
+commercials(M, CommScore) :- CommScore is (M // 10).
+days(_).
+wins(W, WinsScore) :- WinsScore is W*5.
+compute(StateScore, CommScore, D, WinsScore, NewPrediction) :- NewPrediction is (StateScore + CommScore + D + WinsScore).
